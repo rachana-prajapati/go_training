@@ -61,3 +61,79 @@ Data types
 
     byte (alias for uint8)
     rune (alias for int32) (represents a unicode code point)
+    
+
+
+Assignment : 1
+Calculator Console
+Menu
+=====
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+5. Exit
+
+For choice 1 - 4, accept 2 numbers, perform the operation, display the result & show the menu again
+For choice 5 - exit from the application
+
+
+Assignment : 2
+ Refactor Assignment : 1 using functions
+
+
+Functions
+    - Variadic functions
+    - Higher order functions
+        Functions can be treated like data
+            - Assign a function to a variable
+            - Pass a function as an argument to another function
+            - Return a function as a return value from another function
+
+Collections
+    - Arrays
+    - Slices
+    - Maps
+
+Given the following string
+Pariatur nisi nostrud id ipsum esse minim velit Lorem eiusmod est reprehenderit sint Esse non proident labore dolore labore nisi dolore dolor proident voluptate minim laborum Ad irure ut Lorem exercitation Ipsum reprehenderit consequat veniam non reprehenderit ut eiusmod magna magna aliquip ut sint Mollit irure fugiat nostrud non excepteur aliquip cillum Labore dolore deserunt irure ea temporConsequat ea quis ipsum esse minim reprehenderit amet Qui do dolor do anim occaecat culpa commodo sunt mollit excepteur laboris tempor Ullamco labore quis culpa laborum sunt Culpa incididunt ad consectetur ut deserunt tempor proident ut Qui quis aliqua fugiat sunt dolore commodo reprehenderit veniam tempor Voluptate sit laboris sunt et do sint ea irure veniam duis laborum Quis irure id officia inNisi velit proident cupidatat laborum velit enim qui deserunt consectetur Ad ea quis veniam cupidatat tempor sunt elit velit Sit anim irure sunt ut exercitation excepteur elit laboris occaecat dolor Duis ad commodo ut quis nisi pariatur anim Fugiat ad id anim velit labore
+
+Find out the size of the word that occurs the most (by size)
+
+for ex:
+5 letters occurs 10 times
+4 letters occurs 9 times
+3 letters occurs 12 times
+
+output : 3 letter words with 12 occurances
+
+Modules & Packages
+
+go.mod
+
+creating a module
+go mod init <module_name>
+
+GOROOT
+GOPATH
+
+Before Go 1.13 (NO module support)
+    GOPATH
+        pkg
+        bin
+        src
+            github.com
+                tkmagesh
+                    repo_name (application)
+                        main.go
+
+            
+Installing 3rd party packages
+    go get github.com/fatih/color
+
+To create a build
+    go build .
+    go build -o modularity-app
+
+To create a vendor folder
+    go mod vendor
